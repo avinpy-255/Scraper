@@ -9,8 +9,8 @@ interface Props {
 
 function PriceLook({title, iconSrc, value, borderColor}: Props) {
   return (
-    <div className={`price-info_card border-l-[${borderColor}]`}>
-        <p className="text-base text-black-100">{title}</p>
+    <div className={`price-info_card `}>
+        <p className="font-mono text-base text-stone-200">{title}</p>
 
         <div className="flex gap-1">
             <Image
@@ -19,7 +19,7 @@ function PriceLook({title, iconSrc, value, borderColor}: Props) {
                 width={30}
                 height={30}
             />
-            <p className="text-base text-black-100">{value}</p>
+            <p className="font-mono text-base text-stone-200">{value}</p>
         </div>
     </div>
   )

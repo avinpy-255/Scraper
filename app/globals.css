@@ -100,7 +100,7 @@
   }
 
   .dialog-input_container {
-    @apply px-5 py-3 mt-3 flex items-center gap-2 border border-gray-300 rounded-[27px];
+    @apply px-5 py-3 mt-3 flex items-center gap-2 border border-gray-300 rounded-[27px] bg-zinc-700;
   }
 
   .dialog-input {
@@ -122,7 +122,7 @@
 
   /* PRICE INFO */
   .price-info_card {
-    @apply flex-1 min-w-[200px] flex flex-col gap-2 border-l-[3px] rounded-10 bg-white-100 px-5 py-4;
+    @apply flex-1 min-w-[200px] flex flex-col gap-2   bg-zinc-950 px-5 py-4;
   }
 
   /* PRODUCT CARD */

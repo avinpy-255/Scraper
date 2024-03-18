@@ -27,7 +27,7 @@ const ProductLook = ({ product }: Props) => {
                     <p className='text-black opacity-50 text-lg capitalize'>
                         {`${product.stars}/5`}
                     </p>
-                    <p className=' text-sky-500 text-lg font-semibold'>
+                    <p className=' text-sky-700 text-lg font-semibold'>
                         <span >{product?.currency}</span>
                         <span >{product?.currentPrice}</span>
                     </p>

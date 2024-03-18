@@ -29,7 +29,7 @@ const ProductDetails = async ({params:{id}}: Props) => {
           />
         </div>
 
-        <div className="flex-1 flex flex-col pt-6">
+        <div className="flex-1 flex flex-col relative pt-6">
           <div className="flex items-start gap-5 flex-wrap pb-6">
             <div className="flex flex-col justify-items-center gap-3">
               <p className="text-[28px]  text-secondary font-semibold">{product.title}</p>
@@ -42,9 +42,9 @@ const ProductDetails = async ({params:{id}}: Props) => {
               </Link>
             </div>
              
-            <div className=" product-info pt-6 px-6 border-2 md:px-20 py-24 border-slate-900 bg-slate-500">
+            <div className=" pt-6   py-24 border-slate-900 bg-slate-500">
               <div className="flex flex-col gap-2 ">
-                <p className="text-[34px] text-secondary font-semibold">
+                <p className="pr-4 text-[34px] text-secondary font-semibold">
                   {product.currency} {formatNumber(product.currentPrice)}
                 </p>
               </div>

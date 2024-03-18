@@ -29,7 +29,7 @@ const Mod = ({ productId}: Props) => {
     const closeMod = () => setIsOpen(false);
     return (
         <>
-            <button type='button' className='btn' onClick={openMod}>
+            <button type='button' className='w-1/3 inline-block rounded-full border-2 border-primary-100 px-6 pb-[6px] pt-2 text-3xl font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:border-primary-accent-200 hover:bg-secondary-50/50 focus:border-primary-accent-200 focus:bg-secondary-50/50 focus:outline-none focus:ring-0 active:border-primary-accent-200 motion-reduce:transition-none dark:border-primary-400 dark:text-primary-300 dark:hover:bg-blue-950 dark:focus:bg-blue-950' onClick={openMod}>
                 Track
             </button>
 
@@ -61,7 +61,7 @@ const Mod = ({ productId}: Props) => {
                             leave="ease-in duration-200"
                             leaveFrom="opacity-100 scale-95"
                         >
-                            <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+                            <div className="inline-block align-bottom bg-zinc-600 rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
                                 <div className="flex flex-col">
                                     <div className="flex justify-between">
                                         <div className="p-3 border border-gray-200 rounded-10">
@@ -89,12 +89,12 @@ const Mod = ({ productId}: Props) => {
                                     </h4>
                                     
                                     <p>
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum odit cumque excepturi enim repellendus, esse numquam assumenda et deserunt, itaque reprehenderit? Adipisci magnam fuga blanditiis labore, asperiores nostrum dolorem exercitationem?
+                                        
                                     </p>
                                    
                                 </div>
                                 <form className="flex flex-col mt-5" onSubmit={handlesubmit}>
-                                        <label htmlFor="email" className="test-sm font-medium text-red-700">
+                                        <label htmlFor="email" className="test-sm font-medium text-zinc-900">
                                             Email Address
                                         </label>
                                         <div className="dialog-input_container">
@@ -113,7 +113,7 @@ const Mod = ({ productId}: Props) => {
                                             value={email}
                                             onChange={(e) => setEmail(e.target.value)}
                                             placeholder="Enter your email address"
-                                             className="dialog-input"
+                                             className="dialog-input bg-zinc-700"
                                            />             
                                         </div>
 
