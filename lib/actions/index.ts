@@ -27,9 +27,9 @@ export async function scraper(URL: string){
       product = {
         ...scrapedProduct,
         priceHistory: updatedPriceHistory,
-        lowerPrice: getLowestPrice(updatedPriceHistory),
+        lowestPrice: getLowestPrice(updatedPriceHistory),
         highestPrice: getHighestPrice(updatedPriceHistory),
-        average: getAveragePrice(updatedPriceHistory),
+        averagePrice: getAveragePrice(updatedPriceHistory),
         //reviews: extractFirstRating(updatedPriceHistory),
       }
      }
